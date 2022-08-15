@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en" style="height:100% ;">
-
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
@@ -9,12 +8,12 @@
     <link rel="stylesheet" href="../css/EmployeePayroll.css">
     <script defer src="../js/Payroll.js"></script>
 </head>
-
 <body>
     <header class="header-content-header">
         <div class="logo-content">
             <div class="image">
-                <img src="../assets/icons8-calendar-64 (1).png"></div>
+                <img src="../assets/icons8-calendar-64 (1).png">
+            </div>
             <div>
                 <span class="emp-text">EMPLOYEE</span><br>
                 <span class="emp-textPayroll">PAYROLL</span>
@@ -26,8 +25,8 @@
             <div class="Form_head">Employee Payroll Form</div>
             <div class="Row_Content">
                 <label class="label text" for="name">Name</label>
-                <input class="input" type="text" id="name" name="name"
-                placeholder="Your name ...">
+                <input class="input" type="text" id="name" name="name" placeholder="Your name ...">
+                <error-output class="text-error" for="label text"></error-output>
             </div>
             <div class="Row_Content">
                 <label class="label text" for="profile">Profile Image</label>
@@ -49,8 +48,38 @@
                         <img class="Profile" id="img4" src="../assets/Random1.jpg">
                     </label>
                 </div>
-
+            </div>
+            <div class="Row_Content">
+                <label class="label text" for="gender">Gender</label>
+                <div>
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label class="text" for="male">Male</label>
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label class="text" for="female">Female</label>
+                </div>
+            </div>
+            <div class="Row_Content">
+                <label class="label text" for="department">Department</label>
+                <div>
+                    <input type="checkbox" id="hr" name="hr" value="HR">
+                    <label class="text" for="hr">HR</label>
+                    <input type="checkbox" id="sales" name="sales" value="Sales">
+                    <label class="text" for="sales">Sales</label>
+                    <input type="checkbox" id="finance" name="finance" value="Finance">
+                    <label class="text" for="finance">Finance</label>
+                    <input type="checkbox" id="engineer" name="engineer" value="Engineer">
+                    <label class="text" for="engineer">Engineer</label>
+                    <input type="checkbox" id="others" name="others" value="Others">
+                    <label class="text" for="others">Others</label>
+                </div>
+            </div>
+            <div class="Row_Content">
+                <label class="label text" for="salary">Choose your salary level</label>
+                <input type="range" id="salary" name="salary" min="300000" 
+                max="500000" step="100" value="350000">
+                <output class="salary-output" for="salary">400000</output>
             </div>
         </form>
+
     </div>
 </body>

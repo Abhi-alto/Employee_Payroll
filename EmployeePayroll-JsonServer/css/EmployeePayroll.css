@@ -120,3 +120,6 @@ label {
     flex-direction: row;
     align-items: center;
 }
+input#salary {
+    width: -webkit-fill-available;
+}
