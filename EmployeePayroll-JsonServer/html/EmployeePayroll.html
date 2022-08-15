@@ -11,14 +11,29 @@
 </head>
 
 <body>
-    <div class="header-content-header">
+    <header class="header-content-header">
         <div class="logo-content">
             <div class="image">
-            <img src="../assets/icons8-calendar-64 (1).png"></div>
+                <img src="../assets/icons8-calendar-64 (1).png"></div>
             <div>
                 <span class="emp-text">EMPLOYEE</span><br>
                 <span class="emp-textPayroll">PAYROLL</span>
             </div>
         </div>
+    </header>
+    <div class="form_content">
+        <form class="form" action="#" onsubmit="save(event);return false">
+            <div class="Form_head">Employee Payroll Form</div>
+            <div class="Row_Content">
+                <label class="label text" for="name">Name</label>
+                <input class="input" type="text" id="name" name="name"
+                placeholder="Your name ...">
+            </div>
+            <div class="Row_Content">
+                <label class="label select" for="Gender">Gender</label>
+                <span class="Gender1" type="radio" id="Gender" name="Gender1"></span>
+                <span class="Gender2" type="radio" id="Gender" name="Gender2"></span>
+            </div>
+        </form>
     </div>
 </body>
